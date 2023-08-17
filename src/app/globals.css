@@ -1,27 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.texto{
+    width: 70%;
+    display: block;
+    margin: 2rem auto;
+}
+.country{
+    font-family: 'Rubik Distressed', cursive;
+    text-align: left;
+    font-weight: 500;
+    font-size: 5rem;
+    color: #EEB81D;
+    position: absolute;
+    bottom: -2rem;
+    left: 2rem;
+    line-height: 1;
+    text-shadow: 2px 3px 10px black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.precio{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+    position: absolute;
+    bottom: -4rem;
+    right: 4rem;
+    transform: rotate(4deg);
+    text-shadow: 2px 3px 10px black;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.domicilio{
+    position: absolute;
+    bottom: -15rem;
+    right: 0;
+    left: 0 ;
+    margin-left: 1rem;
+    display: block;
+    margin-top: 6rem;
+    font-size: 4.5rem;
+    width: 70%;
+    font-weight: 900;
+    color: white;
+    line-height: .8;
 }
+
+.texto-footer{
+    margin-top: 3rem;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*
+fuentes:
+font-family: 'Rubik Marker Hatch', cursive;
+
+*/
