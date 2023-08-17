@@ -18,15 +18,15 @@ export default function Home() {
   
   return (
     <>
-      <div className='mx-auto flex items-center md:w-1/5 flex-wrap'>
         <img
           src='assets/comercial/banner.jpg'
           alt='Imegen promocion'
-          className='w-[95%] mx-auto block my-8'
+          className='w-[95%] mx-auto block mt-[5rem] rounded-md'
         />
+        <div className='pantalla'>
         {productos.map(producto => (
           <>
-          <Link key={producto.id} className=" shadow-md shadow-slate-600 rounded-lg block m-2 relative w-[46%] md:w-full"
+          <Link key={producto.id} className=" shadow-md shadow-slate-600 rounded-lg block relative w-full"
             href={`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`}
             target="_blank"
           > 

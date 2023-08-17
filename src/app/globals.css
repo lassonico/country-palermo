@@ -8,20 +8,32 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.pantalla{
+    margin: 5rem auto 0 auto;
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.contenedor{
+    position: relative;
+    padding: 16px;
+}
 .texto{
     width: 70%;
     display: block;
     margin: 2rem auto;
 }
 .country{
+    display: block;
+    margin: 0 auto;
     font-family: 'Rubik Distressed', cursive;
-    text-align: left;
     font-weight: 500;
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: #EEB81D;
     position: absolute;
     bottom: -2rem;
-    left: 2rem;
+    right: 10%;
     line-height: 1;
     text-shadow: 2px 3px 10px black;
 }

@@ -2,7 +2,7 @@ import Image from "next/image"
 
 function Header() {
   return (
-    <div className="relative p-5 mt-10">
+    <div className="contenedor">
         <img
             src={"/assets/logo/texto.svg"}
             className="texto"
