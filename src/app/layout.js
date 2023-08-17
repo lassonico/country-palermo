@@ -26,7 +26,9 @@ export default function RootLayout({ children }) {
                 className="mb-2 block"
                 alt='logotipo de la empresa'
               />
-              <img
+              <Image
+                width={100}
+                height={100}
                 src={"/assets/logo/texto.svg"}
                 className="texto"
             />

@@ -14,7 +14,7 @@ function Header() {
             width={900}
             height={900}
             src={"/assets/comercial/vegetales.png"}
-            alt="Imgen de hamburguesa"
+            alt="Imgen de vegetales"
             className="block imgbegetales"
         />
         {/* <h2 className="country">Minnesota</h2> */}

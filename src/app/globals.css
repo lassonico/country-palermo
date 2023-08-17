@@ -9,7 +9,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .pantalla{
-    margin: 5rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     padding: 5px 10px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -77,10 +77,19 @@ body{
 .texto-footer{
     margin-top: 3rem;
     color: white;
-    font-size: 1.2rem;
+    font-size: .8rem;
     text-align: center;
 }
-
+.texto-dev{
+    color: white;
+    font-size: .8rem;
+    text-align: center;
+}
+.texto-dev a{
+    color: #00bdbd;
+    font-size: .9rem;
+    cursor: pointer;
+}
 .backgroundpage{
     background-color: #141414;
 }
