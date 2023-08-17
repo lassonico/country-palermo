@@ -18,6 +18,7 @@ body{
 .contenedor{
     position: relative;
     padding: 16px;
+    margin-top: 4rem;
 }
 .texto{
     width: 50%;
