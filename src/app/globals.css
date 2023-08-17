@@ -12,7 +12,7 @@ body{
     margin: 5rem auto 0 auto;
     padding: 5px 10px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
 .contenedor{
@@ -39,6 +39,11 @@ body{
     text-shadow: 5px 3px 1px #000000;
 }
 
+.sombra{
+    text-shadow: 3px 3px 10px black;
+
+}
+
 .precio{
     color: white;
     font-family: Rubik Marker Hatch, sans-serif;
@@ -47,7 +52,7 @@ body{
     font-weight: 500;
     position: absolute;
     left: 50%;
-    bottom: -25%;
+    bottom: -23%;
     transform: translate(-50%, -50%);
     /* transform: rotate(4deg); */
     text-shadow: 3px 3px 10px black;
@@ -55,17 +60,18 @@ body{
 
 .domicilio{
     position: absolute;
-    bottom: -12rem;
+    bottom: 6rem;
     right: 0;
     left: 0 ;
     margin-left: 1rem;
     display: block;
     margin-top: 6rem;
     font-size: 3.5rem;
-    width: 80%;
+    /* width: 80%; */
     font-weight: 900;
     color: white;
-    line-height: .8;
+    line-height: .9;
+    text-shadow: 3px 3px 10px black;
 }
 
 .texto-footer{
@@ -77,6 +83,12 @@ body{
 
 .backgroundpage{
     background-color: #141414;
+}
+
+.imgbegetales{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*

@@ -18,28 +18,30 @@ export default function Home() {
   
   return (
     <>
-        <img
-          src='assets/comercial/banner.jpg'
+        <Image
+          width={600}
+          height={500}
+          src='/assets/comercial/banner.jpg'
           alt='Imegen promocion'
-          className='w-[90%] mx-auto block mt-[2rem] rounded-md'
+          className='w-[90%] mx-auto block mt-[7rem] rounded-md'
         />
         <div className='pantalla'>
         {productos.map(producto => (
           <>
-          <Link key={producto.id} className=" shadow-md shadow-slate-600 rounded-lg block relative w-full"
+          <Link key={producto.id} className=" shadow-md shadow-slate-800 rounded-lg block relative w-full"
             href={`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`}
             target="_blank"
           > 
             <div className='absolute top-1 left-2 z-10 w-auto'>
-              <h2 className='text-white text-2xl font-burger' >{producto.nombre}</h2>
-              <p className='text-[#EEB81D] text-2xl font-body font-black'>{formatoMoneda(producto.precio)}</p>
+              <h2 className='text-white text-5xl font-burger sombra' >{producto.nombre}</h2>
+              <p className='sombra text-[#EEB81D] text-5xl font-black'>{formatoMoneda(producto.precio)}</p>
             </div>
             <Image 
               width={400}
               height={350}
               src={`/assets/burgers/${producto.imagen}.jpg`}
               alt={`imagen de ${producto.nombre}`}
-              className="block rounded-md mx-auto brightness-75 hover:brightness-50 ease-in-out duration-300 w-auto"
+              className="block rounded-md mx-auto brightness-75 hover:brightness-50 ease-in-out duration-300 w-full"
               priority={false}
             />
           </Link>
