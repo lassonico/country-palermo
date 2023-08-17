@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
                 height={100}
                 src={"/assets/logo/texto.svg"}
                 className="texto"
+                alt='imagen del nombre de la empresa'
             />
           </div>
         <Header />

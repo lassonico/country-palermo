@@ -100,6 +100,37 @@ body{
     top: 0;
     left: 0;
 }
+.contenedor-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #000000c5;
+}
+.modal{
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+    margin: 7rem auto;
+}
+
+.modal h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
 
 /*
 fuentes:

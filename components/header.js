@@ -5,7 +5,7 @@ function Header() {
     <div className="contenedor">
         <Image
             width={300}
-            height={300}
+            height={600}
             src={"/assets/comercial/floatingburger.png"}
             alt="Imgen de hamburguesa"
             className="block mx-auto mt-5 brightness-50"
@@ -17,8 +17,6 @@ function Header() {
             alt="Imgen de vegetales"
             className="block imgbegetales"
         />
-        {/* <h2 className="country">Minnesota</h2> */}
-        {/* <h3 className="precio">$21.900</h3> */}
         <h3 className="domicilio">Pide tu Domicilio gratis</h3>
     </div>  
   )
