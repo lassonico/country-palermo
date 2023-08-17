@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Country burger',
   description: 'Las mejores hamburguesas de Palermo',
-  themecolor: '#141414'
+  themeColor: '#141414'
 }
 
 // #EEB81D amarillo
