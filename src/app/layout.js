@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={`${inter.className} bg-slate-900 font-body mx-auto md:hidden`}>
+      <body className={`${inter.className} backgroundpage font-body mx-auto md:hidden`}>
         <div className='w-[100%] h-[70vh] md:justify-center mb-10 py-3 pb-5 gap-1 z-10'>
           <Image
             width={50}
