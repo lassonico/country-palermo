@@ -21,7 +21,7 @@ export default function Home() {
         <img
           src='assets/comercial/banner.jpg'
           alt='Imegen promocion'
-          className='w-[95%] mx-auto block mt-[14rem] rounded-md'
+          className='w-[90%] mx-auto block mt-[2rem] rounded-md'
         />
         <div className='pantalla'>
         {productos.map(producto => (
