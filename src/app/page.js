@@ -28,7 +28,7 @@ export default function Home() {
 
     <>
         <Seccion pedir={pedir} />
-        <h2 className='text-7xl text-left font-black mx-2 mt-10 leading-[.7] sombra mb-10 text-white'>¡<span className='text-[#EEB81D] text-8xl'>O</span> elige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
+        <h2 className='text-7xl text-left font-black mx-2 mt-16 leading-[.7] sombra mb-10 text-white'>¡<span className='text-[#EEB81D] text-8xl leading-[.7]'>O</span> elige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
         <div className='pantalla'>
           {productos.map(producto => (
               <button
@@ -37,9 +37,9 @@ export default function Home() {
               className=" shadow-md shadow-slate-800 rounded-lg block relative w-full mb-3"
               onClick={ () => ( pedir(producto.nombre)) }
             >
-              <div className='absolute top-1 left-2 z-10 w-auto'>
-                <h2 className='text-white text-5xl font-burger sombra' >{producto.nombre}</h2>
-                <p className='sombra text-[#EEB81D] text-5xl font-black'>{formatoMoneda(producto.precio)}</p>
+              <div className='absolute top-1 z-10 w-full flex flex-col items-start p-2'>
+                <h2 className='text-white text-5xl text-left font-black sombra' >{producto.nombre}</h2>
+                <p className='sombra text-[#EEB81D] text-4xl text-left font-black'>{formatoMoneda(producto.precio)}</p>
               </div>
               <Image 
                 width={400}

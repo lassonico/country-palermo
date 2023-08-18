@@ -140,11 +140,13 @@ body{
 .texto-belleza{
     text-align: center;
     margin: 8rem auto 2rem auto;
+    line-height: .8;
 }
 
 .texto-belleza::first-letter{
     color: #EEB81D;
     font-size: 120%;
+    line-height: .8;
 }
 
 
