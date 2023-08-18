@@ -13,6 +13,8 @@ export default function Home() {
 
   const [ modalp, setModalp] = useState(false);
 
+  const year = new Date().getFullYear();
+
   const telefono = "573114662581";
 
   function pedir(producto){
@@ -28,6 +30,7 @@ export default function Home() {
 
     <>
         <Seccion pedir={pedir} />
+
         <h2 className='text-7xl text-left font-black mx-2 mt-16 leading-[.7] sombra mb-10 text-white'>¡<span className='text-[#EEB81D] text-8xl leading-[.7]'>O</span> elige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
         <div className='pantalla'>
           {productos.map(producto => (
@@ -59,7 +62,7 @@ export default function Home() {
         alt='Logotipo empresarial'
         className='w-[30%] block my-[5rem] mx-auto'
       />
-      <Footer />
+      <Footer year={year} />
       
     </>
   )

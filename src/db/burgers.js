@@ -25,7 +25,7 @@ const productos = [
     },
     {
         nombre: "Texana",
-        precio: 20900,
+        precio: 18900,
         imagen: "burger_4",
         descripcion: "150 gramos de carne 100% artesanal - pan artesanal - queso tipo mozzarella carne molida - pico e gallo - jalapeños - nachos - tocineta salsa de queso cheddar - papas en casquitos",
         categoriaId: 1,
@@ -33,7 +33,7 @@ const productos = [
     },
     {
         nombre: "Minnesota",
-        precio: 24900,
+        precio: 21900,
         imagen: "burger_5",
         descripcion: "300 gramos de carne artesanal pan platano maduro pepinillos doble queso tipo mozzarella doble tocineta huevo frito salsa americana vegetales cebolla grille papas en casquitos",
         categoriaId: 1,
@@ -49,7 +49,7 @@ const productos = [
     },
     {
         nombre: "Florida",
-        precio: 17900,
+        precio: 16900,
         imagen: "burger_7",
         descripcion: "150 gramos de carne 100% artesanal - patacona - queso tipo mozzarella - tocineta - hogao criollo con chorizo - huevo frito - salsa de la casa - papas en casquitos",
         categoriaId: 1,
@@ -57,7 +57,7 @@ const productos = [
     },
     {
         nombre: "Montana",
-        precio: 14900,
+        precio: 13900,
         imagen: "burger_8",
         descripcion: "150 gramos de carne 100% artesanal - pan artesanal - queso tipo mozzarella - vegetales frescos - cebolla grillé - salsa de la casa",
         categoriaId: 1,
@@ -65,7 +65,7 @@ const productos = [
     },
     {
         nombre: "Hawai",
-        precio: 11900,
+        precio: 15900,
         imagen: "burger_9",
         descripcion: "250 gramos de nuggets de pollo - 120 gramos de papas fritas - salsas de la casa - jugo de cajita",
         categoriaId: 1,
@@ -73,7 +73,7 @@ const productos = [
     },
     {
         nombre: "Super cheese",
-        precio: 11900,
+        precio: 19900,
         imagen: "burger_10",
         descripcion: "250 gramos de nuggets de pollo - 120 gramos de papas fritas - salsas de la casa - jugo de cajita",
         categoriaId: 1,
@@ -81,7 +81,7 @@ const productos = [
     },
     {
         nombre: "Patacon Country",
-        precio: 11900,
+        precio: 18900,
         imagen: "burger_11",
         descripcion: "250 gramos de nuggets de pollo - 120 gramos de papas fritas - salsas de la casa - jugo de cajita",
         categoriaId: 1,
@@ -89,7 +89,7 @@ const productos = [
     },
     {
         nombre: "Menú kids",
-        precio: 11900,
+        precio: 11000,
         imagen: "burger_12",
         descripcion: "250 gramos de nuggets de pollo - 120 gramos de papas fritas - salsas de la casa - jugo de cajita",
         categoriaId: 1,
@@ -97,7 +97,7 @@ const productos = [
     },
     {
         nombre: "Salchipapa kids",
-        precio: 11900,
+        precio: 11000,
         imagen: "burger_13",
         descripcion: "250 gramos de nuggets de pollo - 120 gramos de papas fritas - salsas de la casa - jugo de cajita",
         categoriaId: 1,
@@ -105,7 +105,7 @@ const productos = [
     },
     {
         nombre: "Salchipapa Big",
-        precio: 11900,
+        precio: 19900,
         imagen: "burger_14",
         descripcion: "250 gramos de nuggets de pollo - 120 gramos de papas fritas - salsas de la casa - jugo de cajita",
         categoriaId: 1,

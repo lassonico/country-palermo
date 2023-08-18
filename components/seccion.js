@@ -3,7 +3,7 @@ import Image from "next/image"
 function Seccion({pedir}) {
   return (
     <div>
-        <h3 className="text-white font-black text-7xl sombra texto-belleza">Que tal ésta belleza?</h3> 
+        <h3 className="text-white font-black text-7xl sombra texto-belleza">Que tal éste trio?</h3> 
         <Image
           width={700}
           height={600}

@@ -1,9 +1,9 @@
 import Link from "next/link"
 
-function Footer() {
+function Footer({year}) {
   return (
     <div>
-        <p className="texto-footer">Todos los derechos reservado &copy;Country Burger Palermo</p>
+        <p className="texto-footer">Todos los derechos reservado &copy;Country Burger Palermo {year}</p>
         <p className="texto-dev">Desarrollado por {' '} 
         <Link
           className="text-indigo-500 font-black"
