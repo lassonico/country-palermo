@@ -13,7 +13,7 @@ function Header() {
         <Image
             width={900}
             height={900}
-            src={"/assets/comercial/vegetales.png"}
+            src={"/assets/comercial/vegetales1.png"}
             alt="Imgen de vegetales"
             className="block imgbegetales"
         />
