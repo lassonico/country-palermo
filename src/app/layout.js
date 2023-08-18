@@ -25,6 +25,11 @@ export default function RootLayout({ children }) {
         type="image/svg"
         sizes="<generated>"
       />
+      <meta
+        name='viewport'
+        content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover'
+      />
+      
       </head>
       <body className={`${inter.className} backgroundpage font-body mx-auto md:hidden`}>
         <div className='w-[100%] h-[70vh] md:justify-center mb-10 py-3 pb-5 gap-1 z-10'>
