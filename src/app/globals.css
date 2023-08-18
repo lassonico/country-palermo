@@ -19,6 +19,7 @@ body{
     position: relative;
     padding: 16px;
     margin-top: 4rem;
+    overflow: hidden;
 }
 .texto{
     width: 50%;
@@ -95,10 +96,14 @@ body{
     background-color: #141414;
 }
 
-.imgbegetales{
+.contenedor .imgbegetales{
     position: absolute;
-    top: 0;
-    left: 0;
+    width: 470px;
+    height: 470px;
+    object-fit: cover;
+    top: -8%;
+    right: -47%;
+    filter: drop-shadow(4px 4px 7px black)
 }
 .contenedor-modal{
     position: fixed;
