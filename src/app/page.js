@@ -31,7 +31,8 @@ export default function Home() {
           height={600}
           src='/assets/comercial/banner.jpg'
           alt='Imegen promocion'
-          className='w-[95%] mx-auto block mt-[10rem] rounded-md shadow-gray-800 shadow-lg hover:brightness-50'
+          className='w-full mx-auto block mt-[10rem] shadow-gray-800 shadow-lg hover:brightness-50'
+          onClick={() => (pedir('Una gigante Minnesota!'))}
         />
         <h2 className='text-7xl text-left font-black mx-2 mt-10 leading-[.7] sombra mb-10 text-white'>¡Elige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
         <div className='pantalla'>
