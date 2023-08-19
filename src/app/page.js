@@ -31,7 +31,7 @@ export default function Home() {
     <>
         <Seccion pedir={pedir} />
 
-        <h2 className='text-7xl text-left font-black mx-2 mt-16 leading-[.7] sombra mb-10 text-white'>¡<span className='text-[#EEB81D] text-8xl leading-[.7]'>O</span> elige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
+        <h2 className='text-7xl text-left font-black mx-2 mt-16 leading-[.7] sombra mb-10 text-white'><span className='text-[#EEB81D] text-8xl leading-[.7]'>O</span> elige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
         <div className='pantalla'>
           {productos.map(producto => (
               <button
