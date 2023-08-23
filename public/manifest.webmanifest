@@ -1,12 +1,12 @@
 {
-    "theme_color": "#EEB81D",
+    "theme_color": "#141414",
     "background_color": "#141414",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "country burger",
-    "short_name": "CBP",
-    "description": "El mejor restaurante de hamburguesas de palermo",
+    "name": "Country Burger Palermo",
+    "short_name": "CountryBP",
+    "description": "El mejor restaurante de hamburguesas de Palermo - Huila",
     "icons": [
         {
             "src": "/icon-192x192.png",

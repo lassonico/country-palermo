@@ -47,6 +47,10 @@ body{
 
 }
 
+.separacion{
+    margin-top: 200px;
+}
+
 .precio{
     color: white;
     font-family: Rubik Marker Hatch, sans-serif;
