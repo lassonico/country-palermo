@@ -10,11 +10,10 @@ body{
     user-select: none;
 }
 .pantalla{
-    margin: 5rem auto 0 auto;
-    padding: 5px 10px;
+    margin: 5rem .8rem 0 .8rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: .8rem;
 }
 .contenedor{
     position: relative;
@@ -150,7 +149,7 @@ body{
 
 .texto-belleza{
     text-align: center;
-    margin: 8rem auto 2rem auto;
+    margin: 9rem auto 2rem auto;
     line-height: .8;
 }
 

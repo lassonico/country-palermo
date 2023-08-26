@@ -36,7 +36,7 @@ export default function Home() {
           {productos.map(producto => (
               <div
                 key={producto.id}
-                className="rounded-lg bg-black bg-opacity-50 shadow-lg shadow-slate-900 p-4 block w-[96%] h-auto mb-3 mx-auto"
+                className="rounded-lg bg-gray-900 bg-opacity-50 shadow-lg shadow-gray-900 p-4 block w-[95%] h-auto mb-3 mx-auto"
             >
               <Image 
                 width={200}
