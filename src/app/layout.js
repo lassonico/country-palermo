@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Header from '../../components/header'
 import { Inter } from 'next/font/google'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
           </div>
         <Header />
         </div>
+       
         {children}
       </body>
     </html>

@@ -34,25 +34,28 @@ export default function Home() {
         <h2 className='text-7xl text-left font-black mx-2 mt-16 leading-[.7] sombra mb-10 text-white'><span className='text-[#EEB81D] text-8xl leading-[.7]'>O</span> elige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
         <div className='pantalla'>
           {productos.map(producto => (
-              <button
-              type='button'
-              key={producto.id}
-              className=" shadow-md shadow-slate-800 rounded-lg block relative w-full mb-3"
-              onClick={ () => ( pedir(producto.nombre)) }
+              <div
+                key={producto.id}
+                className="rounded-lg bg-black shadow-lg shadow-slate-900 p-4 block w-[100%] h-auto mb-3 mx-auto"
             >
-              <div className='absolute top-1 z-10 w-full flex flex-col items-start p-2'>
-                <h2 className='text-white text-5xl text-left font-black sombra' >{producto.nombre}</h2>
-                <p className='sombra text-[#EEB81D] text-4xl text-left font-black'>{formatoMoneda(producto.precio)}</p>
-              </div>
               <Image 
-                width={400}
-                height={350}
-                src={`/assets/burgers/${producto.imagen}.jpg`}
+                width={200}
+                height={200}
+                src={`/assets/burgers/${producto.imagen}.png`}
                 alt={`imagen de ${producto.nombre}`}
-                className="block rounded-md mx-auto hover:brightness-50 ease-in-out duration-300 w-full"
+                className="block rounded-md w-auto mb-2 mx-auto"
                 priority={false}
               />
-            </button>)
+              <div className='w-full flex flex-col items-start border-[#EEB81D] border-b-[1px]'>
+                <h2 className='text-white text-2xl text-left font-black sombra mb-2' >{producto.nombre}</h2>
+              </div>
+              <p className='sombra text-[#EEB81D] text-xl text-left font-black mt-2'>{formatoMoneda(producto.precio)}</p>
+              <p className='text-sm text-white mt-2 cortar'>{producto.descripcion}</p>
+              <button
+                type='button'
+                onClick={ () => ( pedir(producto.nombre)) }
+                className='bg-[#EEB81D] shadow-sm shadow-slate-700 p-1 block mt-3 w-[80%] rounded-full text-white font-semibold text-xl'>Pedir</button>
+            </div>)
           )}
         </div>
       <Image
