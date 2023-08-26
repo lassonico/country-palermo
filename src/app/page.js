@@ -36,7 +36,7 @@ export default function Home() {
           {productos.map(producto => (
               <div
                 key={producto.id}
-                className="rounded-lg bg-black shadow-lg shadow-slate-900 p-4 block w-[100%] h-auto mb-3 mx-auto"
+                className="rounded-lg bg-black bg-opacity-50 shadow-lg shadow-slate-900 p-4 block w-[96%] h-auto mb-3 mx-auto"
             >
               <Image 
                 width={200}
@@ -54,7 +54,7 @@ export default function Home() {
               <button
                 type='button'
                 onClick={ () => ( pedir(producto.nombre)) }
-                className='bg-[#EEB81D] shadow-sm shadow-slate-700 p-1 block mt-3 w-[80%] rounded-full text-white font-semibold text-xl'>Pedir</button>
+                className='bg-[#EEB81D] shadow-sm shadow-slate-700 p-1 block mx-auto mt-3 w-[80%] rounded-full text-white font-semibold text-lg'>Pedir</button>
             </div>)
           )}
         </div>
