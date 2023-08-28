@@ -8,7 +8,7 @@ function Header() {
             height={600}
             src={"/assets/comercial/floatingburger.png"}
             alt="Imgen de hamburguesa"
-            className="block mx-auto mt-5 brightness-50"
+            className="block mx-auto mt-5"
         />
         <Image
             width={900}

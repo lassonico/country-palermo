@@ -43,7 +43,7 @@ export default function Home() {
                 height={200}
                 src={`/assets/burgers/${producto.imagen}.png`}
                 alt={`imagen de ${producto.nombre}`}
-                className="block rounded-md w-[85%] mb-2 mx-auto sombra-img"
+                className="block rounded-md w-[80%] mb-2 mx-auto sombra-img"
                 priority={false}
               />
               <div className='w-full flex flex-col items-start border-[#EEB81D] border-b-[1px]'>
