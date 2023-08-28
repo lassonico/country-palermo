@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.className} backgroundpage font-body mx-auto md:hidden`}>
         <div className='w-[100%] h-[70vh] md:justify-center mb-10 py-3 pb-5 gap-1 z-10'>
-          <div className='z-30 flex items-center justify-center mb-10 gap-2 fixed w-full mx-auto top-0 left-0 py-3 bg-[#141414]'>
+          <div className='z-30 flex items-center justify-center mb-10 gap-2 fixed w-[100%] mx-auto top-0 left-0 py-3 bg-[#141414]'>
               <Image
                 width={40}
                 height={40}

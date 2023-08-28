@@ -31,19 +31,19 @@ export default function Home() {
     <>
         <Seccion pedir={pedir} />
 
-        <h2 className='text-7xl text-left font-black mx-2 mt-16 leading-[.7] sombra mb-10 text-white'><span className='text-[#EEB81D] text-8xl leading-[.7]'>O</span> elige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
+        <h2 className='text-7xl text-left font-black mx-0 mt-16 leading-[.7] sombra mb-10 text-white'><span className='text-[#EEB81D] text-8xl leading-[.7]'>O</span> elige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
         <div className='pantalla'>
           {productos.map(producto => (
               <div
                 key={producto.id}
-                className="rounded-lg bg-gray-900 bg-opacity-50 shadow-lg shadow-gray-900 p-4 block w-[95%] h-auto mb-3 mx-auto"
+                className="rounded-lg bg-opacity-50 px-2 py-3 h-auto mb-3 mx-auto w-[100%]"
             >
               <Image 
                 width={200}
                 height={200}
                 src={`/assets/burgers/${producto.imagen}.png`}
                 alt={`imagen de ${producto.nombre}`}
-                className="block rounded-md w-auto mb-2 mx-auto"
+                className="block rounded-md w-[85%] mb-2 mx-auto sombra-img"
                 priority={false}
               />
               <div className='w-full flex flex-col items-start border-[#EEB81D] border-b-[1px]'>
@@ -54,7 +54,7 @@ export default function Home() {
               <button
                 type='button'
                 onClick={ () => ( pedir(producto.nombre)) }
-                className='bg-[#EEB81D] shadow-sm shadow-slate-700 p-1 block mx-auto mt-3 w-[80%] rounded-full text-white font-semibold text-lg'>Pedir</button>
+                className='bg-[#EEB81D] shadow-sm shadow-slate-700 p-1 block mx-auto mt-3 w-[95%] rounded-full text-white font-semibold text-lg'>Pedir</button>
             </div>)
           )}
         </div>

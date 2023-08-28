@@ -9,7 +9,7 @@ function Seccion({pedir}) {
           height={600}
           src='/assets/comercial/banner.jpg'
           alt='Imegen promocion'
-          className='w-full mx-auto block mt-[10rem] shadow-gray-800 shadow-lg hover:brightness-50'
+          className='w-[100%] mx-auto block mt-[2rem] shadow-black shadow-lg hover:brightness-50'
           onClick={() => (pedir('Una gigante Minnesota!'))}
         />
     </div>
