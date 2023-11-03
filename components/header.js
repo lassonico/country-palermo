@@ -6,7 +6,7 @@ function Header() {
         <Image
             width={300}
             height={600}
-            src={"/assets/comercial/floatingburger.png"}
+            src={"/assets/comercial/imgburgerHero.png"}
             alt="Imgen de hamburguesa"
             className="block mx-auto mt-5"
         />

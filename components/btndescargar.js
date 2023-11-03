@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function Boton() {
   const [isInstalled, setIsInstalled] = useState(false);
@@ -27,8 +27,7 @@ function Boton() {
 
   return (
     <div>
-      {/* Tu contenido de la aplicación */}
-      {!isInstalled && <button onClick={handleDownload} className="btndescargar">Descargar App</button>}
+      {!isInstalled && <button onClick={handleDownload} className="bg-[#EEB81D] py-2 px-6 block mx-auto text-white rounded">Descargar App</button>}
     </div>
   );
 }

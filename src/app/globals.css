@@ -19,13 +19,14 @@ body{
 }
 .pantalla{
     width: 100%;
-    margin: 5rem auto;
+    margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: .8rem;
 }
 .contenedor{
     position: relative;
+    height: 85vh;
     padding: 16px;
     margin-top: 4rem;
     overflow: hidden;
@@ -60,7 +61,7 @@ body{
 }
 
 .separacion{
-    margin-top: 200px;
+    margin-top: 20px;
 }
 
 .precio{
@@ -143,7 +144,7 @@ body{
 .modal{
     background-color: #141414;
     padding: 20px;
-    border-radius: 27px;
+    border-radius: 13px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,14 +155,14 @@ body{
 
 .modal h2{
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     margin: 0;
 }
 
 .texto-belleza{
-    margin-top: 15rem;
+    margin-top: 5rem;
     margin-bottom: 1rem;
     margin-left: 0;
     line-height: .8;
@@ -184,6 +185,14 @@ body{
     border-radius: .8rem;
     border: none;
     padding: 1rem;
+}
+
+.btn-conteiner{
+    background-image: linear-gradient(to top, #000000 0%, #00000027 100%);
+    transition: all .3s ease-in-out;
+}
+.container:hover .btn-conteiner{
+    bottom: 0;
 }
 
 /*

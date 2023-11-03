@@ -6,3 +6,12 @@ export const formatoMoneda = cantidad => {
         currency: "COP"
     })
 }
+
+export function pedir(producto){
+    const telefono = "573027503442";
+    const mensaje = `Hola quiero pedir: ${producto}`;
+    const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
+
+    window.open(url, "_blank");
+
+}

@@ -1,63 +1,26 @@
 'use client'
-import { Fragment, useState } from 'react'
 import { productos } from '../db/burgers.js'
-import { formatoMoneda } from '../../helpers'
-import Seccion from '../../components/seccion.js'
-import Modal from '../../components/modal.js'
+import Header from '../../components/header'
+import Hamburguesas from '../../components/hamburguesas'
 
-import Link from 'next/link'
 import Image from 'next/image'
 import Footer from '../../components/footer.js'
+import Boton from '../../components/btndescargar.js'
 
 export default function Home() {
 
-  const [ modalp, setModalp] = useState(false);
-
   const year = new Date().getFullYear();
-
-  const telefono = "573114662581";
-
-  function pedir(producto){
-    console.log('clicaste en pedir')
-    const mensaje = `Hola quiero pedir una ${producto}`
-    const url = "https://wa.me/" + telefono + "?text=" + encodeURIComponent(mensaje);
-
-    window.open(url, "_blank");
-
-  }
   
   return (
 
     <>
-        <Seccion pedir={pedir} />
-
-        <h2 className='text-7xl text-left font-black mx-0 mt-16 leading-[.7] sombra mb-10 text-white'><span className='text-[#EEB81D] text-8xl leading-[.7]'>O</span> elige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
-        <div className='pantalla'>
-          {productos.map(producto => (
-              <div
-                key={producto.id}
-                className="rounded-lg bg-opacity-50 px-2 py-3 h-auto mb-3 mx-auto w-[100%]"
-            >
-              <Image 
-                width={200}
-                height={200}
-                src={`/assets/burgers/${producto.imagen}.png`}
-                alt={`imagen de ${producto.nombre}`}
-                className="block rounded-md w-[80%] mb-2 mx-auto sombra-img"
-                priority={false}
-              />
-              <div className='w-full flex flex-col items-start border-[#EEB81D] border-b-[1px]'>
-                <h2 className='text-white text-2xl text-left font-black sombra mb-2' >{producto.nombre}</h2>
-              </div>
-              <p className='sombra text-[#EEB81D] text-xl text-left font-black mt-2'>{formatoMoneda(producto.precio)}</p>
-              <p className='text-sm text-white mt-2 cortar'>{producto.descripcion}</p>
-              <button
-                type='button'
-                onClick={ () => ( pedir(producto.nombre)) }
-                className='bg-[#EEB81D] shadow-sm shadow-slate-700 p-1 block mx-auto mt-3 w-[95%] rounded-full text-white font-semibold text-lg'>Pedir</button>
-            </div>)
-          )}
-        </div>
+      <Header />
+      <h2 className='text-7xl text-left font-black mx-0 mt-16 leading-[.7] sombra mb-10 text-white'><span className='text-[#EEB81D] leading-[.7]'>E</span>lige la que se <span className='text-[#EEB81D]'>te antoje</span>!</h2>
+      <div className='pantalla'>
+        {productos?.map(producto => (
+            <Hamburguesas key={producto.id} burger={producto}/>)
+        )}
+      </div>
       <Image
         width={100}
         height={100}
@@ -65,8 +28,8 @@ export default function Home() {
         alt='Logotipo empresarial'
         className='w-[30%] block my-[5rem] mx-auto'
       />
+      <Boton />
       <Footer year={year} />
-      
     </>
   )
 }

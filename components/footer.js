@@ -2,7 +2,7 @@ import Link from "next/link"
 
 function Footer({year}) {
   return (
-    <div>
+    <div className="mb-14">
         <p className="texto-footer">Todos los derechos reservado &copy;Country Burger Palermo {year}</p>
         <p className="texto-dev">Desarrollado por {' '} 
         <Link

@@ -1,24 +1,25 @@
+'use client'
 import './globals.css'
-import Image from 'next/image'
-import Header from '../../components/header'
-import { Inter } from 'next/font/google'
-
-
-const inter = Inter({ subsets: ['latin'] })
+import { Countryprovider } from '../../context/Countryprovider'
+import { ToastContainer } from 'react-toastify'
+import Pasos from '../../components/Pasos'
+import 'react-toastify/dist/ReactToastify.css'
+import Hero from '../../components/Hero'
 
 export const metadata = {
   title: 'Country burger',
   description: 'Las mejores hamburguesas de Palermo',
   themeColor: '#141414',
-  manifest: '/manifest.webmanifest'
-  // favicon: '/assets/logo/logo.svg'
+  manifest: '/manifest.webmanifest',
+  viewport: 'minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover'
 }
 
-// #EEB81D amarillo
+// #EEB81D amarillo #141414 negro
 
 export default function RootLayout({ children }) {
+
   return (
-    <html lang="es">
+      <html lang="es">
       <head>
       <link
         rel="icon"
@@ -26,34 +27,14 @@ export default function RootLayout({ children }) {
         type="image/svg"
         sizes="<generated>"
       />
-      <meta
-        name='viewport'
-        content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover'
-      />
-      
       </head>
-      <body className={`${inter.className} backgroundpage font-body mx-auto md:hidden`}>
-        <div className='w-[100%] h-[70vh] md:justify-center mb-10 py-3 pb-5 gap-1 z-10'>
-          <div className='z-30 flex items-center justify-center mb-10 gap-2 fixed w-[100%] mx-auto top-0 left-0 py-3 bg-[#141414]'>
-              <Image
-                width={40}
-                height={40}
-                src={"assets/logo/logo.svg"}
-                className="mb-2 block"
-                alt='logotipo de la empresa'
-              />
-              <Image
-                width={100}
-                height={100}
-                src={"/assets/logo/texto.svg"}
-                className="texto"
-                alt='imagen del nombre de la empresa'
-            />
-          </div>
-        <Header />
-        </div>
-       
-        {children}
+      <body className="backgroundpage font-body mx-auto md:hidden" translate='no'>
+        <ToastContainer theme='colored' />
+        <Countryprovider>
+          <Hero />
+          <Pasos />
+          {children}
+        </Countryprovider>
       </body>
     </html>
   )
