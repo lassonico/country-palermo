@@ -7,7 +7,7 @@ import useContry from '../hooks/useCountry';
 
 export default function Modal({burger, cerrar}) {
 
-  const { handleAgregarOrden, orden } = useContry()
+  const { handleAgregarOrden, orden } = useContry();
   const [ cantidad, setCantidad ] = useState(1);
   const [ editar, setEditar ] = useState(false);
 

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import useContry from "../hooks/useCountry";
-import Baggy from "./Baggy";
 
 const pasos = [
     { 

@@ -1,18 +1,18 @@
-import Image from "next/image"
+import Image from "next/image";
 import { useState } from "react";
-import { formatoMoneda } from '../helpers/index'
-import useContry from "../hooks/useCountry"
+import { formatoMoneda } from '../helpers/index';
+import useContry from "../hooks/useCountry";
 import Modal from "./Modal";
 
 function ResumenProducto({burger}) {
 
-  const { editarCantidad, orden, hanleEliminarBurger } = useContry();
+  const { editarCantidad, hanleEliminarBurger } = useContry();
   const [ modal, setModal ] = useState();
 
   const cerra = () =>{
     setModal(!modal)
   }
-  console.log(orden)
+
   return (
     <>
       {modal && (
