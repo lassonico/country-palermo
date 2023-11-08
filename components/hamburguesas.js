@@ -1,9 +1,8 @@
-'use client'
 import Image from 'next/image';
 import { useState } from 'react'
 import { formatoMoneda } from '../helpers';
 import Modal from './Modal';
-
+// import useContry from '../hooks/useCountry';
 
 function Hamburguesas({burger}) {
 
@@ -14,7 +13,7 @@ function Hamburguesas({burger}) {
         setModal(!modal)
     }
 
-    const cerra = () =>{
+    const cerrar = () =>{
         setModal(false)
     }
 
@@ -23,7 +22,7 @@ function Hamburguesas({burger}) {
         className="rounded-lg px-2 py-3 h-auto mb-3 mx-auto w-[100%]"
     > 
         { modal && (
-            <Modal burger={burger} cerrar={cerra} />
+            <Modal burger={burger} cerrar={cerrar} />
         ) }
         <Image 
             width={300}
@@ -41,7 +40,7 @@ function Hamburguesas({burger}) {
         <button
             type='button'
             onClick={ () =>  handleSetModal() }
-            className='bg-[#EEB81D] shadow-sm shadow-slate-700 p-1 block mx-auto mt-3 w-full rounded text-white text-lg'>Ver
+            className='bg-[#EEB81D] shadow-sm shadow-slate-900 p-1 block mx-auto mt-3 w-full rounded text-white text-lg'>Ver
         </button>
     </div>
   )

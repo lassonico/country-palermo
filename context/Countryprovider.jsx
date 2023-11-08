@@ -1,4 +1,3 @@
-'use client'
 import { useState, createContext, useEffect } from 'react'
 import { toast } from 'react-toastify'
 import { pedir } from '../helpers';
@@ -13,6 +12,7 @@ const Countryprovider = ({children}) => {
     const [ wpp, setWpp ] = useState('');
     const [ pago, setPago ] = useState('');
     const [ total, setTotal ] = useState(0);
+    const [ ventana, setVentana ] = useState(false)
 
     const handleAgregarOrden = ({ categoriaId, descripcion,  ...burger}) => {
         if(orden.some(burgerstate => burgerstate.id === burger.id )){
@@ -25,7 +25,10 @@ const Countryprovider = ({children}) => {
             toast.success(`${burger.cantidad} ${burger.nombre} Agregado a tu orden!`)
         }
     }
-
+    const handleShangeVentana = (id) =>{
+        console.log(id)
+        setVentana(!ventana);
+    }
     useEffect(() => {
         const nuevoTotal = orden.reduce((total, burger) => (burger.precio * burger.cantidad) + total, 0)
         setTotal(nuevoTotal)
@@ -73,7 +76,10 @@ const Countryprovider = ({children}) => {
                 pago,
                 setPago,
                 enviarPedido,
-                total
+                total,
+                handleShangeVentana,
+                setVentana,
+                ventana
             }}
         >
             {children}

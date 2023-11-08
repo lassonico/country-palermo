@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="contenedor">
         <Image
-            width={300}
+            width={600}
             height={600}
             src={"/assets/comercial/imgburgerHero.png"}
             alt="Imgen de hamburguesa"

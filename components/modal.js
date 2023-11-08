@@ -1,11 +1,10 @@
-'use client'
 import { useState, useEffect } from 'react'
 import Image from "next/image"
 import { formatoMoneda } from "../helpers"
 import useContry from '../hooks/useCountry';
 
 
-export default function Modal({burger, cerrar}) {
+function Modal({burger, cerrar}) {
 
   const { handleAgregarOrden, orden } = useContry();
   const [ cantidad, setCantidad ] = useState(1);
@@ -80,3 +79,4 @@ export default function Modal({burger, cerrar}) {
   )
 }
 
+export default Modal;

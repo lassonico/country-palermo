@@ -73,6 +73,7 @@ function Page() {
             type="text"
             className='bg-[#141414] mb-5 block outline-none border-b border-[#EEB81D] text-white text-xl font-light w-full py-3'
           >
+            <option value="">Selecciona</option>
             <option value="efectivo">Efectivo</option>
             <option value="nequi">Nequi</option>
             <option value="daviplata">Daviplata</option>
