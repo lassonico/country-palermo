@@ -2,10 +2,8 @@
 import { productos } from '../db/burgers.js'
 import Header from '../../components/header'
 import Hamburguesas from '../../components/hamburguesas'
-
 import Image from 'next/image'
 import Footer from '../../components/footer.js'
-import Boton from '../../components/btndescargar.js'
 
 export default function Home() {
 
@@ -28,7 +26,6 @@ export default function Home() {
         alt='Logotipo empresarial'
         className='w-[30%] block my-[5rem] mx-auto'
       />
-      <Boton />
       <Footer year={year} />
     </>
   )
