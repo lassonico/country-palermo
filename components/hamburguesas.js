@@ -7,17 +7,16 @@ import Modal from './Modal';
 
 function Hamburguesas({burger}) {
 
-    const [ modal, setModal ] = useState(false)
+    const [ modal, setModal ] = useState(false);
     const { nombre, precio, descripcion, imagen } = burger;
 
-    const handleSetModal = () => {
+    const handleShangeModal = () => {
         setModal(!modal)
     }
 
-    const cerrar = () =>{
+    const cerrar = ()=> {
         setModal(false)
     }
-
   return (
     <div
         className="rounded-lg px-2 py-3 h-auto mb-3 mx-auto w-[100%]"
@@ -40,7 +39,7 @@ function Hamburguesas({burger}) {
         <p className='text-sm text-white mt-2 cortar'>{descripcion}</p>
         <button
             type='button'
-            onClick={ () =>  handleSetModal() }
+            onClick={ () => handleShangeModal() }
             className='bg-[#EEB81D] shadow-sm shadow-slate-900 p-1 block mx-auto mt-3 w-full rounded text-white text-lg'>Ver
         </button>
     </div>

@@ -1,7 +1,6 @@
-'use client'
 import { productos } from '../db/burgers.js'
 import Header from '../../components/header'
-import Hamburguesas from '../../components/hamburguesas'
+import Hamburguesas from '../../components/Hamburguesas'
 import Image from 'next/image'
 import Footer from '../../components/footer.js'
 
