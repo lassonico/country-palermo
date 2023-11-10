@@ -10,14 +10,10 @@ function ResumenProducto({burger}) {
   const { editarCantidad, hanleEliminarBurger } = useContry();
   const [ modal, setModal ] = useState();
 
-  const cerra = () =>{
-    setModal(!modal)
-  }
-
   return (
     <>
       {modal && (
-        <Modal burger={burger} cerrar={cerra} />
+        <Modal burger={burger} cerrar={() => setModal(false)} />
       )}
       <div className="flex items-center justify-start mb-2 p-0 relative overflow-hidden container">
           <svg
@@ -47,7 +43,7 @@ function ResumenProducto({burger}) {
           </div>
           <div className="w-full h-full flex items-center justify-evenly absolute bottom-[-100%] left-0 btn-conteiner">
             <button 
-              onClick={() => { editarCantidad(burger.id), cerra()}}
+              onClick={() => { editarCantidad(burger.id), setModal(true)}}
               className="border text-white rounded block w-1/3 py-2">Editar</button>
             <button
               onClick={() => hanleEliminarBurger(burger.id)}

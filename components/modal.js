@@ -1,4 +1,3 @@
-"use client"
 import { useState, useEffect } from 'react'
 import Image from "next/image"
 import { formatoMoneda } from "../helpers"
@@ -71,7 +70,7 @@ function Modal({burger, cerrar}) {
             </button>
           </div>
           <button
-            onClick={() => {handleAgregarOrden({ ...burger, cantidad}) , cerrar()} }
+            onClick={() => {handleAgregarOrden({ ...burger, cantidad}) , cerrar() } }
             className="w-full block bg-[#EEB81D] text-white p-3 rounded border-none mt-5" >{ editar ? "Guardar cambios" : "Agregar al pedido" }</button>
         </div>
       </div>
